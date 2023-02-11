@@ -1,7 +1,7 @@
 import { Geolocation } from "@capacitor/geolocation";
 import { ref } from "vue";
 import { OneWeather } from "./one-weather.model";
-const weatherurl = 'https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=207b229deef7ace432085b7ce1ea79bb';
+const weatherurl = 'https://api.openweathermap.org/data/2.5/forecast?id=524901&appid=${key}';
 const weather = ref<OneWeather>();
 fetchWeather();
 setInterval(fetchWeather, 120000);
