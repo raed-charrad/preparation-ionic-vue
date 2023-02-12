@@ -5,7 +5,7 @@
         </div>
         <ion-card-header>
             <ion-card-subtitle>{{ weather.list[0].weather[0].description }} </ion-card-subtitle>
-            <ion-card-title>{{ formatTemperature(weather.list[0].main.temp, 'F') }}</ion-card-title>            
+            <ion-card-title>{{ formatTemperature(weather.list[0].main.temp, 'C') }}</ion-card-title>            
         </ion-card-header>
         <ion-card-content>
         <ion-grid>

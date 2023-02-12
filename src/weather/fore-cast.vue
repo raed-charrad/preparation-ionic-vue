@@ -1,9 +1,5 @@
 <template>
     <ion-list>
-    <ion-list-header>
-      Forecast
-    </ion-list-header>
-
     <ion-item v-for="weth in weather?.list" :key="weth.dt">
       <ion-avatar slot="start">
         <div class="weather-background">
@@ -28,7 +24,6 @@ import { useWeather } from './weather.service';
 export default defineComponent({
     components: {
     IonList,
-    IonListHeader,
     IonItem,
     IonAvatar,
     IonLabel,
